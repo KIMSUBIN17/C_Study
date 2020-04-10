@@ -13,7 +13,6 @@ int main() {
   }
 
 //두 반복문 반복하는 횟수 length-1(배열의 마지막은 비교불가)
-
   for(int i = 0; i < length - 1; i++) {    
     for(int j = 0; j < length -1; j++) {
 			if(arr[j] > arr[j + 1]) {
