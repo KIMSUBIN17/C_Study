@@ -13,13 +13,13 @@ int main() {
   }
 
   for(i = 1; i < length; i++) {
-    temp = arr[i];
-    j = i - 1;
-    while(j >= 0 && arr[j] > temp) {
+    temp = arr[i];     //i변수의 값을 인덱스로 가지는 값을 temp에 저장
+    j = i - 1;         //배열에서 선정된 값 아래로 비교하기 때문
+    while(j >= 0 && arr[j] > temp) {    
       arr[j + 1] = arr[j];
-      j = j - 1;
+      j = j - 1;     
     }
-    arr[j + 1] = temp;
+    arr[j + 1] = temp;        //while 빠져나간 후 실행
   }
 
   printf("\n정렬 후 : ");
